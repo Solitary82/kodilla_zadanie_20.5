@@ -13,19 +13,19 @@ class CountryFlagContainer extends Component {
         this.props.dispatch(searchCountries(''));
     }
     
-    search(event) {                     this.props.dispatch(searchCountries(event.target.value));
+    search(event) {
+        this.props.dispatch(searchCountries(event.target.value));
     }
     
     deleteCountry(id) {
         this.props.dispatch(deleteCountry(id));
     }
 
-    
     render() {
         return(
             <div>
-                <div className='search text-center'>Search Country: 
-                    <input type='text' onChange={this.search.bind(this)}/>
+                <div className='search text-center'>
+                    Wyszukaj kraj: <input type='text' onChange={this.search.bind(this)}/>
                 </div>
                 <CountryFlagList countries={this.props.visibleCountries} deleteCountry={this.deleteCountry.bind(this)}/>
             </div> 
