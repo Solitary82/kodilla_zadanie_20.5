@@ -6,7 +6,7 @@ import CountryFlagList from '../presentational/flag-list.component';
 
 class ContinentsContainer extends Component {
     constructor(props) {
-        super(props);
+        super();
     }
     
     chooseContinent(event) {

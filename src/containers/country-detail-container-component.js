@@ -5,7 +5,7 @@ import CountryDetails from '../presentational/country-details.component';
 
 class CountryDetailsContainer extends Component {
     constructor(props) {
-        super(props);
+        super();
     }
 
     componentDidMount() {
